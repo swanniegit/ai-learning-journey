@@ -5,47 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Learning Journey</title>
   <style>
+    /* Typography and general layout */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Tahoma, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #e8f5e9; /* soft green background */
+      color: #2e5f34; /* dark green text */
     }
     header {
-      background-color: #212529;
-      color: white;
-      padding: 1rem;
+      background-color: #2e7d32; /* dark green header */
+      color: #ffffff;
+      padding: 1.5rem;
       text-align: center;
     }
     nav {
-      background-color: #343a40;
-      color: white;
-      padding: 0.5rem;
+      background-color: #66bb6a; /* medium green navigation */
+      color: #ffffff;
+      padding: 0.75rem;
       text-align: center;
     }
     nav a {
-      color: #fff;
+      color: #ffffff;
       margin: 0 0.75rem;
       text-decoration: none;
+      font-weight: 500;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     h2 {
-      border-bottom: 2px solid #6c757d;
+      border-bottom: 3px solid #81c784; /* light green border */
       padding-bottom: 0.5rem;
       margin-top: 2rem;
-      color: #495057;
+      color: #388e3c;
     }
     table {
       width: 100%;
@@ -53,18 +55,47 @@
       margin-top: 1rem;
     }
     th, td {
-      border: 1px solid #dee2e6;
+      border: 1px solid #c8e6c9;
       padding: 0.75rem;
       text-align: left;
     }
     th {
-      background-color: #f1f3f5;
+      background-color: #c8e6c9; /* very light green header */
+      color: #2e5f34;
     }
     .footer {
       text-align: center;
       padding: 1rem;
-      background-color: #212529;
-      color: white;
+      background-color: #2e7d32;
+      color: #ffffff;
+      margin-top: 2rem;
+    }
+    /* Progress bar styles for gamification */
+    .progress-container {
+      background-color: #c8e6c9;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    .progress-bar {
+      height: 20px;
+      width: 0;
+      background-color: #388e3c;
+      transition: width 0.4s ease;
+    }
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .badge {
+      background-color: #a5d6a7;
+      color: #1b5e20;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
@@ -163,6 +194,26 @@
       <li><strong>Agentic AI frameworks</strong> – LangChain, CrewAI, AutoGen, Semantic Kernel.</li>
     </ul>
     <p>For detailed explanations and citations, see the accompanying report.</p>
+  </div>
+  <!-- Gamification section -->
+  <div class="container" id="gamification">
+    <h2>Gamification &amp; Progress</h2>
+    <p>Stay motivated by earning badges and tracking your progress through the journey.  Each completed week unlocks a badge.  Use the progress bar to visualise how far you’ve come.</p>
+    <!-- Progress bar (manually adjust the width attribute as you advance) -->
+    <div class="progress-container">
+      <div class="progress-bar" style="width: 0%"></div>
+    </div>
+    <div class="badge-list">
+      <span class="badge">Assessment</span>
+      <span class="badge">Chat Explorer</span>
+      <span class="badge">Vibe Coder</span>
+      <span class="badge">Foundation Builder</span>
+      <span class="badge">ML Pro</span>
+      <span class="badge">DL Specialist</span>
+      <span class="badge">Prompt Master</span>
+      <span class="badge">Agent Architect</span>
+      <span class="badge">Capstone Hero</span>
+    </div>
   </div>
   <div class="container" id="contact">
     <h2>Contact & Feedback</h2>
